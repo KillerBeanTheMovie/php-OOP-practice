@@ -9,11 +9,13 @@
 <h1>
     Calculator
 </h1>
-    <input type="text" name="first" placeholder="enter the first number">
-    <input type="text" name="second" placeholder="enter the second number">
-    <button>Subtract</button>
-    <button>Add</button>
-    <button>Multiply</button>
-    <button>Divide</button>
+<form action="calculator.php" method="post">
+    <input type="number" name="first" placeholder="enter the first number" required>
+    <input type="number" name="second" placeholder="enter the second number" required>
+    <button value="sub" name="operator">Subtract</button>
+    <button value="add" name="operator">Add</button>
+    <button value="mult" name="operator">Multiply</button>
+    <button value="divide" name="operator">Divide</button>
+</form>
 </body>
 </html>
